@@ -1,0 +1,31 @@
+{
+  "name": "testml",
+  "version": "1.0.0",
+  "description": "Test Mercado Libre Front-End Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanignaciogn/mlrepository.git"
+  },
+  "author": "Juan Ignacio Gonzalez Nadin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanignaciogn/mlrepository/issues"
+  },
+  "homepage": "https://github.com/juanignaciogn/mlrepository#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.4.1",
+    "express": "^4.14.0",
+    "node-sass": "^3.10.0"
+  }
+}
