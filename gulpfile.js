@@ -20,13 +20,6 @@ gulp.task('js', function () {
 	.pipe(gulp.dest('js/min/'));
 });
 
-// css Task
-gulp.task('css', function() {
-	return gulp.src('css/*.css')
-	.pipe(cleanCSS({compatibility: 'ie8'}))
-	.pipe(concat('styles.min.css'))
-	.pipe(gulp.dest('css/min'));
-});
 
 // html Task
 gulp.task('html', function() {
@@ -36,7 +29,7 @@ gulp.task('html', function() {
 	.pipe(gulp.dest('./'));
 });
 
-
+// sass Tasks (sass + autoprefixer + minify)
 gulp.task('sass', function () {
 	gulp.src('./sass/**/*.scss')
 	.pipe(sass().on('error', sass.logError))
@@ -44,5 +37,13 @@ gulp.task('sass', function () {
 	.pipe(gulp.dest('./css'))
 	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(concat('styles.min.css'))
-	.pipe(gulp.dest('css/min'));;
+	.pipe(gulp.dest('css/min'));
+});
+
+// css Task (deprecated)
+gulp.task('css', function() {
+	return gulp.src('css/*.css')
+	.pipe(cleanCSS({compatibility: 'ie8'}))
+	.pipe(concat('styles.min.css'))
+	.pipe(gulp.dest('css/min'));
 });
