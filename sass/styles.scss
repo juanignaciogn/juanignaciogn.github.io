@@ -1,9 +1,24 @@
 //GLOBAL VARIABLES
+$bg-color:#f4f4f4;
+$bg-color-contrast:#E0E0E0;
 
 //GLOBAL MIXINS
 
 
-
+.body {
+	background-color:$bg-color;
+}
 .container {
 	max-width:1170px;
+}
+.test-header {
+	background-color:$bg-color-contrast;
+	h1 {
+		font-size: 4em;
+	}
+}
+.test-product {
+	img {
+		max-width:100%;
+	}
 }
