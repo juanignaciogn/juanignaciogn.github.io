@@ -1,7 +1,7 @@
 
 var CarouselController = function() {
 	var carousel = new ch.Carousel(ch('.demo-carousel')[0], {
-	    pagination: true
+		pagination: true
 	});
 	console.log("carousel on");
 };

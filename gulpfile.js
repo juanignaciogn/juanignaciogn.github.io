@@ -5,11 +5,11 @@ var gulp = require('gulp'),
 concat = require('gulp-concat'),
 uglify = require('gulp-uglify'),
 htmlmin = require('gulp-htmlmin'),
-cleanCSS = require('gulp-clean-css');
-
+cleanCSS = require('gulp-clean-css'),
+sass = require('gulp-sass');
 // Default Task
 
-gulp.task('default', ['html', 'css', 'js']);
+gulp.task('default', ['html', 'sass', 'css',  'js']);
 
 // js Task
 gulp.task('js', function () {
@@ -21,10 +21,10 @@ gulp.task('js', function () {
 
 // css Task
 gulp.task('css', function() {
-  return gulp.src('css/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(concat('styles.min.css'))
-    .pipe(gulp.dest('css/min'));
+	return gulp.src('css/*.css')
+	.pipe(cleanCSS({compatibility: 'ie8'}))
+	.pipe(concat('styles.min.css'))
+	.pipe(gulp.dest('css/min'));
 });
 
 // html Task
@@ -33,4 +33,11 @@ gulp.task('html', function() {
 	.pipe(concat('index.html'))
 	.pipe(htmlmin({collapseWhitespace: true}))
 	.pipe(gulp.dest('./'))
+});
+
+
+gulp.task('sass', function () {
+	gulp.src('./sass/**/*.scss')
+	.pipe(sass().on('error', sass.logError))
+	.pipe(gulp.dest('./css'));
 });

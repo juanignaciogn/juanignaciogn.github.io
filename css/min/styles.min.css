@@ -1,0 +1,2 @@
+.container{max-width:1170px}
+.tabs li{display:block}.tabs .labels:after{content:'';display:table;clear:both}.tabs label{display:inline-block;float:left;cursor:pointer}.tabs .tab-content,.tabs input[type=radio]{display:none}.tabs [id^=tab]:checked~article[id^=tab-content]{display:block}

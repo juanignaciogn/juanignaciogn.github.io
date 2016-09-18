@@ -1,0 +1,23 @@
+.tabs li {
+  display: block; }
+
+.tabs .labels:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.tabs label {
+  display: inline-block;
+  float: left;
+  cursor: pointer; }
+  .tabs label :hover {
+    /*background: #3498db;*/ }
+
+.tabs .tab-content {
+  display: none; }
+
+.tabs input[type=radio] {
+  display: none; }
+
+.tabs [id^=tab]:checked ~ article[id^=tab-content] {
+  display: block; }
