@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juanignaciogn/mlrepository.git"
+    "url": "https://github.com/juanignaciogn/juanignaciogn.github.io.git"
   },
   "author": "Juan Ignacio Gonzalez Nadin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/juanignaciogn/mlrepository/issues"
+    "url": "https://github.com/juanignaciogn/juanignaciogn.github.io/issues"
   },
-  "homepage": "https://github.com/juanignaciogn/mlrepository#readme",
+  "homepage": "https://github.com/juanignaciogn/juanignaciogn.github.io#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
