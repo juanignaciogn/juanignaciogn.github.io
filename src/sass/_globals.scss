@@ -1,0 +1,59 @@
+//GLOBAL VARIABLES
+$color-base: #f4f4f4;
+$color-light: #E0E0E0;
+$color-dark:#999;
+$color-brand: #ffdb15;
+$color-important: #900;
+$color-desc: #390;
+$color-quest: #dcf1fa;
+
+$font-size-xl: 4em;
+$font-size-lg: 3em;
+$font-size-md: 1em;
+$font-size-sm: 0.7em;
+
+$xl: 60px;
+$lg: 40px;
+$md: 20px;
+$sm: 10px;
+
+$border-light: 1px solid $color-light;
+$border-dark: 1px solid $color-dark;
+
+@mixin tab($color) {
+	position:relative;
+	bottom:-1px;
+	background-color: $color-light;
+	padding:$sm $md $sm $sm;
+	margin-right:-10px;
+	//box-shadow: $shadow;
+	border-top: $border-dark;
+	border-left: $border-dark;
+	border-right: $border-dark;
+	&:after {
+		background: $color-base;
+		content: '';
+		height: 25px;
+		position: absolute;
+		top: 3px;
+		width: 43px;
+		right: -26px;
+		transform: rotate(70deg);
+		border-bottom: $border-dark;
+	}
+
+
+}
+
+%pad-lg {
+	padding: $lg;
+}
+%pad-md {
+	padding: $md;
+}
+%pad-sm {
+	padding: $sm;
+}
+%separator {
+	border-bottom: $border-light;
+}

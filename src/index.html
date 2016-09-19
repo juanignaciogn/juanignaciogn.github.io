@@ -15,7 +15,14 @@
 	<link rel="stylesheet" href="css/styles.min.css" />
 </head>
 <body>
-	<main class="container">
+	<header class="container-fluid header">
+		<div class="row">
+			<div class="col-sm-12">
+				<a href="#">logo</a>
+			</div>
+		</div>
+	</header>
+	<main class="container main">
 		<header class="row test-header">
 			<div class="col-md-12 text-center">
 				<h1>Ipad Mini Apple 16 Gb Wifi Led 7.9</h1>
@@ -25,10 +32,12 @@
 			<figure class="col-md-6 col-sm-12">
 				<img src="assets/img/fpo-ml-large.png" alt="Ipad Mini Apple 16 Gb Wifi Led 7.9"/>
 			</figure>
-			<article class="col-md-6 col-sm-12">
-				<h2>$4799<sup>99</sup></h2>
+			<section class="col-md-6 col-sm-12">
 				<form>
 					<fieldset>
+						<article>
+							<strong>$4799<sup>99</sup></strong>
+						</article>
 						<div class="ch-form-row">
 							<label for="sel-quantity">
 								Quantity:
@@ -52,14 +61,14 @@
 								<option value="12">12</option>
 							</select>
 						</div>
-						<div class="ch-form-row">
-							<input type="button" class="ch-btn" value="Button">
+						<div class="ch-form-row buy">
+							<input type="button" class="ch-btn" value="Buy">
 							<legend>Mercado Libre isn't the owner of this product</legend>
 						</div>  
 					</fieldset>
 				</form>
-				<article>
-					<h2>More products like this</h2>
+				<article class="more-products">
+					<h3>More products like this</h3>
 					<div class="demo-carousel ch-carousel">
 						<ul>
 							<li><img src="assets/img/fpo-ml.png"></li>
@@ -74,14 +83,14 @@
 						</ul>
 					</div> 
 				</article>
-			</article>
+			</section>
 		</section>
-		<section class="row test-info">
+		<section class="row test-desc-qa">
 			<div class="col-md-12">
 				<ul class="tabs">
 					<li class="labels">
-						<label for="tab-desc" id="label1">Description</label>
-						<label for="tab-quest" id="label2">Questions</label>
+						<label for="tab-desc" id="desc">Description</label>
+						<label for="tab-quest" id="quest">Questions</label>
 					</li>
 					<li>
 						<input type="radio" checked name="tabs" id="tab-desc">

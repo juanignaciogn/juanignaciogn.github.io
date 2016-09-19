@@ -1,0 +1,63 @@
+@import "globals";
+.test-desc-qa {
+	@extend %separator;
+	@extend %pad-lg;
+	padding-top: $lg;
+	.tabs {
+		li {
+			display: block;
+			&:not(.labels){
+				border: $border-dark;
+			}
+		}
+		.labels {
+			&:after {
+				content: '';
+				display: table;
+				clear: both;
+			}
+		}
+		label {
+			display: inline-block;
+			float: left;
+			cursor: pointer;
+			&#desc {
+				@include tab($color-light);
+			}
+			&#quest {
+				@include tab($color-light);
+			}
+			:hover {
+				/*background: #3498db;*/
+			}
+		}
+		.tab-content {
+			display: none;
+			padding: $md;
+			background-color: $color-light;
+		}
+		.tab-content * {
+			animation: scale 0.7s ease-in-out;
+		}
+		@keyframes scale {
+			0% {
+				transform: scale(0.9);
+				opacity: 0;
+			}
+			50% {
+				transform: scale(1.01);
+				opacity: 0.5;
+			}
+			100% {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}	
+		input[type=radio] {
+			display:none;
+		}
+		[id^=tab]:checked ~ article[id^=tab-content] {
+			display: block;
+		}
+	}
+}

@@ -1,24 +1,13 @@
-//GLOBAL VARIABLES
-$bg-color:#f4f4f4;
-$bg-color-contrast:#E0E0E0;
+@import "globals";
+body {
+	background-color: $color-base;
+}
+.container-fluid.header {
+	border-bottom: 1px solid $color-light;
+	background-color: $color-brand;
+}
+.container.main {
+	max-width: 1170px;
+}
 
-//GLOBAL MIXINS
 
-
-.body {
-	background-color:$bg-color;
-}
-.container {
-	max-width:1170px;
-}
-.test-header {
-	background-color:$bg-color-contrast;
-	h1 {
-		font-size: 4em;
-	}
-}
-.test-product {
-	img {
-		max-width:100%;
-	}
-}
