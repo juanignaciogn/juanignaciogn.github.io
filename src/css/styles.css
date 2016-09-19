@@ -1,9 +1,10 @@
 body {
   background-color: #f4f4f4; }
 
-.container-fluid.header {
+.container-fluid.nav-header {
   border-bottom: 1px solid #E0E0E0;
-  background-color: #ffdb15; }
+  background-color: #ffdb15;
+  padding: 10px; }
 
 .container.main {
   max-width: 1170px; }
