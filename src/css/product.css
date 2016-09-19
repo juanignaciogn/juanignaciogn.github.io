@@ -1,28 +1,35 @@
-.test-product figure, .test-product figure img, .test-product section form, .test-product section .more-products {
+.test-product .prod-image, .test-product .prod-buy, .test-product .prod-buy .more-products {
   padding: 40px; }
+
+.test-product .prod-image img {
+  padding: 20px; }
 
 .test-product {
   border-bottom: 1px solid #E0E0E0; }
 
-.test-product figure img {
+.test-product .prod-image img {
   max-width: 100%;
   box-sizing: border-box;
   border: 1px solid #E0E0E0; }
 
-.test-product section form {
+.test-product .prod-buy form {
+  padding-top: 20px;
   /* override from chico styles*/ }
-  .test-product section form article {
-    margin-bottom: 20px; }
-    .test-product section form article strong {
+  .test-product .prod-buy form .prod-price {
+    padding-bottom: 10px; }
+    .test-product .prod-buy form .prod-price strong {
       color: #900;
       font-size: 4em; }
-  .test-product section form .ch-form-row {
+  .test-product .prod-buy form .ch-form-row {
     padding-bottom: 20px; }
-    .test-product section form .ch-form-row label {
+    .test-product .prod-buy form .ch-form-row label {
       width: auto !important; }
-  .test-product section form .buy legend {
+  .test-product .prod-buy form .buy legend {
     font-size: 1em;
     color: #999; }
 
-.test-product section .more-products h3 :after {
-  content: '\a0'; }
+.test-product .prod-buy .more-products {
+  background-color: #dcf1fa;
+  color: #999; }
+  .test-product .prod-buy .more-products h3 :after {
+    content: '\a0'; }

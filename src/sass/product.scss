@@ -1,21 +1,22 @@
 @import "globals";
 .test-product {
 	@extend %separator;
-	figure {
+	.prod-image {
 		@extend %pad-lg;
 
 		img {
-			@extend %pad-lg;
+			@extend %pad-md;
 			max-width:100%;
 			box-sizing:border-box;
 			border:$border-light;
 		}
 	}
-	section {
+	.prod-buy {
+		@extend %pad-lg;
 		form {
-			@extend %pad-lg;
-			article {
-				margin-bottom:$md;
+			padding-top: $md;
+			.prod-price {
+				padding-bottom: $sm;
 				strong {
 					color: $color-important;
 					font-size: $font-size-xl;
@@ -38,6 +39,8 @@
 		}
 		.more-products {
 			@extend %pad-lg;
+			background-color: $color-quest;
+			color: $color-dark;
 			h3 {
 				& :after {
 					content: '\a0';
