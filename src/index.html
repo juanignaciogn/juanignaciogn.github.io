@@ -13,30 +13,31 @@
 	<link rel="stylesheet" href="libraries/bootstrap-3.3.7-dist/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="libraries/chico/dist/ui/chico.min.css" />
 	<link rel="stylesheet" href="css/styles.min.css" />
+	<link rel="shortcut icon" href="assets/favicon.ico" />
 </head>
 <body>
 	<header class="container-fluid nav-header">
 		<div class="row">
 			<div class="col-sm-12">
-				<a href="#">logo</a>
+				<a href="#" class="test-logo">Test Mercado Libre</a>
 			</div>
 		</div>
 	</header>
-	<main class="container main">
+	<main class="container main" itemscope itemtype="http://schema.org/Product">
 		<header class="row test-header">
 			<div class="col-md-12 text-center">
-				<h1>Ipad Mini Apple 16 Gb Wifi Led 7.9</h1>
+				<h1 itemprop="name">Ipad Mini Apple 16 Gb Wifi Led 7.9</h1>
 			</div>
 		</header>
 		<section class="row test-product">
 			<figure class="col-md-6 col-sm-12 prod-image">
-				<img src="assets/img/fpo-ml-large.png" alt="Ipad Mini Apple 16 Gb Wifi Led 7.9"/>
+				<img itemprop="image" src="assets/img/fpo-ml-large.png" alt="Ipad Mini Apple 16 Gb Wifi Led 7.9"/>
 			</figure>
 			<section class="col-md-6 col-sm-12 prod-buy">
 				<form>
 					<fieldset>
-						<article class="prod-price">
-							<strong>$4799<sup>99</sup></strong>
+						<article class="prod-price" itemscope itemtype="http://schema.org/Offer">
+							<strong itemprop="price">$4799<sup>99</sup></strong>
 						</article>
 						<div class="ch-form-row">
 							<label for="sel-quantity">
@@ -94,7 +95,7 @@
 					</li>
 					<li>
 						<input type="radio" checked name="tabs" id="tab-desc">
-						<article id="tab-content-desc" class="tab-content">
+						<article id="tab-content-desc" class="tab-content" itemprop="description">
 							<h1 class="text-center">Mighty. Small.</h1>
 							<p>There’s more to mini than meets the eye. The new iPad mini 4 puts uncompromising performance and potential in your hand. It’s thinner and lighter than ever before, yet powerful enough to help you take your ideas even further.</p>
 							<hr/>

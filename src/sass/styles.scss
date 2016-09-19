@@ -1,11 +1,24 @@
 @import "globals";
 body {
 	background-color: $color-base;
+	width:100%;
+	margin:0 auto;
 }
 .container-fluid.nav-header {
 	border-bottom: 1px solid $color-light;
 	background-color: $color-brand;
 	padding: $sm;
+		.test-logo {
+			font-size: $font-size-xl;
+			line-height: $font-size-md;
+			color: $color-base; 
+			font-weight: bold;
+			text-shadow: 1px 1px 1px $color-dark;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
 }
 .container.main {
 	max-width: 1170px;
