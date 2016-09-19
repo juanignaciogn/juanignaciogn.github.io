@@ -38,11 +38,12 @@
 
 		}
 		.more-products {
-			@extend %pad-lg;
-			background-color: $color-quest;
+			padding: $md $lg $lg;
+			background-color: $color-notice;
 			color: $color-dark;
 			h3 {
-				& :after {
+				padding-bottom: $md;
+				&:after {
 					content: '\a0';
 				}
 			}

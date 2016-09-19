@@ -4,8 +4,8 @@ $color-light: #E0E0E0;
 $color-dark:#999;
 $color-brand: #ffdb15;
 $color-important: #900;
-$color-desc: #390;
-$color-quest: #dcf1fa;
+$color-notice: #dcf1fa;
+//$color-desc: #390;
 
 $font-size-xl: 4em;
 $font-size-lg: 3em;
@@ -16,21 +16,23 @@ $xl: 60px;
 $lg: 40px;
 $md: 20px;
 $sm: 10px;
+$xs: 5px;
 
 $border-light: 1px solid $color-light;
 $border-dark: 1px solid $color-dark;
 
-@mixin tab($color) {
+@mixin tab($color:$color-base,$border:$border-light) {
 	position:relative;
 	bottom:-1px;
-	background-color: $color-light;
+	background-color: $color;
 	padding:$sm $md $sm $sm;
-	margin-right:-10px;
+	margin-left:$sm;
 	//box-shadow: $shadow;
-	border-top: $border-dark;
-	border-left: $border-dark;
-	border-right: $border-dark;
-	&:after {
+	border-top: $border-light;
+	border-left: $border-light;
+	border-right: $border-light;
+	border-radius: $xs $xs 0 0;
+	/*&:after {
 		background: $color-base;
 		content: '';
 		height: 25px;
@@ -40,9 +42,7 @@ $border-dark: 1px solid $color-dark;
 		right: -26px;
 		transform: rotate(70deg);
 		border-bottom: $border-dark;
-	}
-
-
+	}*/
 }
 
 %pad-lg {

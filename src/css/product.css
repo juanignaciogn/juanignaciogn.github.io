@@ -1,4 +1,4 @@
-.test-product .prod-image, .test-product .prod-buy, .test-product .prod-buy .more-products {
+.test-product .prod-image, .test-product .prod-buy {
   padding: 40px; }
 
 .test-product .prod-image img {
@@ -29,7 +29,10 @@
     color: #999; }
 
 .test-product .prod-buy .more-products {
+  padding: 20px 40px 40px;
   background-color: #dcf1fa;
   color: #999; }
-  .test-product .prod-buy .more-products h3 :after {
-    content: '\a0'; }
+  .test-product .prod-buy .more-products h3 {
+    padding-bottom: 20px; }
+    .test-product .prod-buy .more-products h3:after {
+      content: '\a0'; }

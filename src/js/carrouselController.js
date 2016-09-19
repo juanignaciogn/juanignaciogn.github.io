@@ -7,6 +7,6 @@ var CarouselController = function() {
 };
 
 
-$(document).on('ready', function(){
+$(window).on('load', function(){
 	carouselCtrl = new CarouselController();
 });
