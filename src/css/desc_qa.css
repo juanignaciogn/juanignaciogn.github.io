@@ -113,7 +113,8 @@
     .test-desc-qa .quest-article p {
       padding: 10px; }
     .test-desc-qa .quest-article h5 {
-      margin: 5px; }
+      margin: 5px;
+      font-weight: bold; }
     .test-desc-qa .quest-article .question {
       color: #2f6ba4; }
       .test-desc-qa .quest-article .question p {
